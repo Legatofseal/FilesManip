@@ -50,15 +50,15 @@ public class Controller {
             string=br.readLine();
             switch (string) {
                 case "reverse":
-                    stringCollection.reverseString(stringArrayList);
+                    new ReverseArr().manipulation(stringArrayList);
                     check = true;
                     break;
                 case "shuffle":
-                    stringCollection.shuffleString(stringArrayList);
+                    new ShuffleArr().manipulation(stringArrayList);
                     check = true;
                     break;
                 case "sort":
-                    stringCollection.sortString(stringArrayList);
+                    new SortAr().manipulation(stringArrayList);
                     check = true;
                     break;
                 default: System.out.println("Please enter command again");
